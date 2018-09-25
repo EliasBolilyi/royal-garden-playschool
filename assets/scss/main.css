@@ -2,5 +2,6 @@
 @import "common/main.scss";
 @import "common/header.scss";
 @import "common/footer.scss";
+@import "common/index.scss";
 @import "common/input.scss";
 @import "common/media-queries.scss";
