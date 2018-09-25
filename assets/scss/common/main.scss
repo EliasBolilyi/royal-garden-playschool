@@ -1,0 +1,33 @@
+// @font-face {
+//   font-family: ;
+//   src: url("");
+// }
+
+
+
+html, body, div, span, p, header, footer, section, h1, h2, h3, h4, h5, h6, ul, li, form, input, textarea, button, ol  {
+    font-family: Georgia-Regular , Georgia-Bold , PFDin-Regular ,PFDin-Bold;
+    color: $dark-grey;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    text-decoration: none;
+    border: 0;
+}
+body{
+  background: #fff;
+  position: relative;
+}
+a , a:hover ,a:focus{
+  text-decoration: none;
+  outline: none;
+}
+.disable-scroll {
+    overflow: hidden;
+    max-height: 100vh;
+    position: fixed;
+    width: 100%;
+}
