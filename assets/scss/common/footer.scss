@@ -1,0 +1,53 @@
+
+.footer{
+    margin-top: -83px;
+}
+.footer-wrp{
+    position: relative;
+    border-top: 1px solid $secondary-color;
+}
+.social {
+    padding-top: 20px;
+}
+.social a{
+    display: inline-block;
+    margin-right: 33px;
+    width: 25px;
+}
+.social a:hover path {
+    fill: #FF5147;
+}
+.social a:last-child{
+    margin-right: 0;
+}
+
+.copy-right{
+    line-height: 20px;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    color: $secondary-color;
+    padding: 28px 0;
+}
+.idea{
+    display: inline-block;
+    line-height: 19px;
+    font-size: 13px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $secondary-color;
+    padding: 31px 0;
+    transition: 500ms;
+    -webkit-transition: 500ms;
+}
+.idea:hover{
+    color: $primary-color;
+}
+.idea span{
+    line-height: 19px;
+    font-size: 8px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $secondary-color;
+}
