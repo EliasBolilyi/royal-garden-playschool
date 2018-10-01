@@ -27,6 +27,7 @@
     letter-spacing: 0.15em;
     color: $secondary-color;
     padding: 28px 0;
+    text-transform: uppercase;
 }
 .idea{
     display: inline-block;
@@ -34,7 +35,7 @@
     font-size: 13px;
     text-align: right;
     letter-spacing: 0.05em;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     color: $secondary-color;
     padding: 31px 0;
     transition: 500ms;

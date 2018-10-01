@@ -8,6 +8,10 @@
     object-fit: cover;
     height: 789px;
 }
+.video-block-poster_tab{
+    display: none;
+}
+
 .main-video-block__title{
     font-family: Futura-Bold;
     line-height: normal;
@@ -643,6 +647,8 @@ content: '';
     color: #4F4F4F;
     text-align: center;
 }
-
+.idividual-mg_mob{
+    display: none;
+}
 
 // Individual
