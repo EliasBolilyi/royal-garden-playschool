@@ -3,6 +3,7 @@
 @import "common/header.scss";
 @import "common/footer.scss";
 @import "common/index.scss";
+@import "common/page-about.scss";
 @import "common/modal-window.scss";
 @import "common/input.scss";
 @import "common/media-queries.scss";
