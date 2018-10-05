@@ -143,9 +143,10 @@
 <?php wp_footer(); ?>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/build/lib/readmore/readmore.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/build/js/slick.min.js"></script>
+<!-- <script src="<?php echo get_template_directory_uri(); ?>/build/js/slick.min.js"></script> -->
 <script src="<?php echo get_template_directory_uri(); ?>/build/lib/swiper/swiper.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/build/lib/input/number.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/build/lib/input/checkbox.radio.js"></script>
