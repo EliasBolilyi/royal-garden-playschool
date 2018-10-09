@@ -16,7 +16,7 @@ Template Name: About us
                 $images = $dynamic_featured_image -> get_featured_images();
                 if( $images ) {
                     foreach ( $images as $key => $image ) {
-                        $class = ( $key !== count( $images ) -1 ) ? " class='slider-first__item" : " class='image-block'";          
+                        $class = ( $key !== count( $images ) -1 ) ? " class='slider-first__item'" : " class='image-block'";          
                         $title = $dynamic_featured_image -> get_image_title($image['full']);
                         ?>
                             <div <?php echo $class ?>>

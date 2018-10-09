@@ -78,6 +78,8 @@ $table_prefix  = 'wp_';
  */
 define('WP_DEBUG', true);
 
+define( 'WPCF7_AUTOP', false );
+
 /* Это всё, дальше не редактируем. Успехов! */
 
 /** Абсолютный путь к директории WordPress. */
@@ -86,3 +88,5 @@ if ( !defined('ABSPATH') )
 
 /** Инициализирует переменные WordPress и подключает файлы. */
 require_once(ABSPATH . 'wp-settings.php');
+
+

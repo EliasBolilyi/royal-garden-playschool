@@ -977,3 +977,369 @@
 }
 
 // About us
+
+// Page Meal
+
+
+// Page Meal
+
+@media (min-width: 1441px){
+    .meal-slider-item {
+        height: 775px;
+    }
+    .meal-slider-item__img {
+        width: 632px;
+        height: 100%;
+    }
+    .meal-slider-item__img img {
+        object-fit: cover;
+        width: 100%;
+    }
+    .meal-slider-nav {
+        left: 12%;
+        max-width: 54%;
+    }
+    .about-nav-item__name {
+        left: 33px;
+    }
+    .meal-slider .slick-prev {
+        bottom: 13.9%;
+        border-radius: 0 0 0 7px;
+        z-index: 12;
+    }
+    .meal-slider .slick-next {
+        bottom: 22.9%;
+    }
+}
+@media (max-width: 1366px){
+    .meal-slider-nav {
+        max-width: 58%;
+    }
+    .meal-slider .slick-arrow, .meal-slider .slick-arrow:focus {
+        right: 30.2%;
+    }
+}
+@media (max-width: 1280px){
+    .meal-slider-nav {
+        max-width: 54%;
+    }
+    .about-nav-item {
+        height: 150px;
+    }
+    .meal-slider .slick-arrow, .meal-slider .slick-arrow:focus {
+        right: 32.2%;
+    }
+}
+@media (max-width: 1024px){
+    .meal-slider-item__img {
+        width: 368px;
+        height: 100%;
+    }
+    .about-nav-item {
+        height: 105px;
+    }
+    .meal-slider .slick-arrow, .meal-slider .slick-arrow:focus {
+        right: 27.7%;
+    }
+    .meal-slider .slick-prev {
+        bottom: 15.6%;
+    }
+}
+@media (max-width: 768px){
+    .meal-slider-item {
+        height: 430px;
+    }
+    .meal-slider-item__img {
+        width: 268px;
+    }
+    .meal-slider-item__text {
+        margin-left: 40px;
+        padding: 3px 0 5px 17px;
+    }
+    .meal-slider-item__name {
+        padding-bottom: 22px;
+    }
+    .meal-slider-item_h {
+        height: 330px;
+    }
+    .about-nav-item {
+        margin: 50px 5px;
+    }
+    .meal-slider .slick-arrow, .meal-slider .slick-arrow:focus {
+        width: 65px;
+        height: 65px;
+        z-index: 11;
+        right: 26.7%;
+    }
+    .meal-slider-nav {
+        max-width: 59%;
+        left: 0;
+        bottom: 45px;
+    }
+    .meal-slider .slick-prev {
+        bottom: 18.1%;
+    }
+    .meal-slider .slick-next {
+        bottom: 29.9%;
+    }
+    .meal-slider_p {
+        padding-bottom: 95px;
+    }
+    .about-nav-item__name {
+        font-size: 10px;
+    }
+    .meal-eco-prod_p {
+        padding: 53px 0 70px;
+    }
+    .meal-eco-prod__quote {
+        width: 224px;
+    }
+    .meal-eco-prod__img img {
+        height: 400px;
+        object-fit: cover;
+    }
+    .meal-eco-prod__text{
+        position: relative;
+        padding-left: 27px;
+        margin-left: 30px;
+    }
+    .meal-eco-prod__text:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: #a38b39;
+        border-radius: 4px;
+    }
+    .meal-about-m__img, .meal-about-m__wrp{
+        width: 49%;
+        display: inline-block;
+    }
+    .meal-about-m__wrp{
+        padding-left: 32px;
+        vertical-align: middle;
+    }
+    .meal-about-m {
+        padding-left: 0;
+    }
+    .meal-about-m__text {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .meal-about-m__text:before {
+        display: none;
+    }
+    .meal-about-m__img img {
+        height: 400px;
+        object-fit: cover;
+    }
+    .meal-about-s__text {
+        height: auto;
+    }
+    .meal-about-s__title {
+        padding-bottom: 4px;
+    }
+    .meal-sign-up__name{
+        text-align: center;
+        padding-bottom: 5px;
+    }
+    .meal-sign-up__text{
+        text-align: center;
+        padding-bottom: 40px;
+        padding-left: 0;
+    }
+    .meal-about-s__img {
+        padding-bottom: 50px;
+    }
+    .meal-about_p {
+        padding-top: 90px;
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 480px){
+    .meal-slider-item {
+        height: 100%;
+    }
+    .meal-slider-item__img {
+        height: 306px;
+        width: 100%;
+    }
+    .meal-slider-nav {
+        max-width: 92%;
+        bottom: 31%;
+    }
+    .meal-slider-item_h {
+        height: 100%;
+        margin-top: 420px;
+    }
+    .meal-slider-item__name {
+        font-size: 30px;
+    }
+    .meal-slider-item__text {
+        line-height: 20px;
+        font-size: 14px;
+    }
+    .about-nav-item {
+        height: 80px;
+    }
+    .about-nav-item__name {
+        left: 10px;
+        bottom: 5px;
+        font-size: 8px;
+    }
+    .meal-slider .slick-arrow, .meal-slider .slick-arrow:focus {
+        right: 0;
+        box-shadow: none;
+    }
+    .meal-slider .slick-prev {
+        bottom: 53%;
+    }
+    .meal-slider .slick-next {
+        bottom: 60%;
+        border-radius: 7px 0 0 0;
+    }
+    .slick-arrow img {
+        transform: scale(0.7);
+    }
+    .meal-slider_p {
+        padding-bottom: 48px;
+    }
+    .meal-eco-prod__quote {
+        width: 224px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .meal-eco-prod__quote:before {
+        left: 0;
+    }
+    .meal-eco-prod__quote {
+        padding-bottom: 38px;
+    }
+    .meal-eco-prod__img img {
+        height: 175px;
+        width: 100%;
+    }
+    .meal-eco-prod__title {
+        font-size: 30px;
+    }
+    .meal-eco-prod__text {
+        line-height: 20px;
+        font-size: 14px;
+    }
+    .meal-eco-prod_p {
+        padding: 41px 0 70px;
+    }
+    .meal-about-m__img img {
+        height: 308px;
+        width: 100%;
+    }
+    .meal-about-m__img, .meal-about-m__wrp {
+        width: 100%;
+    }
+    .meal-about-m__img {
+        padding-bottom: 20px;
+    }
+    .meal-about-m__title_p {
+        padding-bottom: 20px;
+    }
+    .meal-about-m__title {
+        font-size: 30px;
+    }
+    .meal-about-m__wrp {
+        padding-left: 0;
+    }
+    .meal-about-m__text {
+        line-height: 16px;
+        font-size: 10px;
+        margin-left: 30px;
+        width: 80%;
+        padding-bottom: 50px;
+    }
+    .meal-about-s__title {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    .meal-about-s__text {
+        line-height: 16px;
+        font-size: 10px;
+    }
+    .meal-about-s__img {
+        padding-bottom: 40px;
+    }
+    .meal-about-s__title_l{
+        text-align: right;
+    }
+    .meal-about-s__text_l{
+        text-align: right;
+    }
+    .meal-about-s__img img {
+        height: 150px;
+        width: 100%;
+    }
+    .meal-sign-up__name {
+        font-size: 30px;
+    }
+    .meal-sign-up__text {
+        line-height: 16px;
+        font-size: 10px;
+        margin-right: 0;
+        padding-bottom: 30px;
+    }
+    .form-input.meal-sign-up_w-33 {
+        width: 195px;
+        margin-right: 0;
+        display: block;
+        margin: 0 auto 10px;
+    }
+    .form-input-submit.meal-sign-up_w-33 {
+        width: 195px;
+        margin: 5px auto 0;
+        display: block;
+    }
+    .meal-slider .slick-arrow, .meal-slider .slick-arrow:focus {
+        width: 50px;
+        height: 50px;
+    }
+    .meal-about_p {
+        padding-top: 46px;
+    }
+}
+@media (max-width: 375px){
+    .meal-slider .slick-prev {
+        bottom: 53%;
+    }
+    .meal-slider .slick-next {
+        bottom: 60%;
+    }
+}
+@media (max-width: 320px){
+    .meal-about-s__title {
+        font-size: 18px;
+    }
+    .about-nav-item {
+        height: 70px;
+    }
+    .meal-slider-nav {
+        bottom: 37%;
+    }
+    .meal-slider-item_h {
+        margin-top: 400px;
+    }
+    .meal-slider .slick-arrow, .meal-slider .slick-arrow:focus {
+        width: 50px;
+        height: 50px;
+    }
+    .meal-slider .slick-prev {
+        bottom: 55.8%;
+    }
+    .meal-slider .slick-next {
+        bottom: 62.8%;
+    }
+    .meal-about-m__title {
+        font-size: 28px;
+    }
+}
+
+// Page Meal

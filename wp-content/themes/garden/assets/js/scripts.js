@@ -49,6 +49,30 @@ $(document).ready(function(){
         asNavFor: '.slider-about'
     });
 
+    $('.meal-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<button type="button" class="slick-prev"><img src="http://localhost:8888/royal-garden-playschool/wp-content/themes/garden/build/images/prev.svg"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="http://localhost:8888/royal-garden-playschool/wp-content/themes/garden/build/images/next.svg"></button>',
+        fade: true,
+        asNavFor: '.meal-slider-nav'
+    });
+    $('.meal-slider-nav').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: false,
+        // responsive: [
+        //     {
+        //       breakpoint: 1025,
+        //       settings: {
+        //         slidesToShow: 2
+        //       }
+        //     },
+        //   ],
+        asNavFor: '.meal-slider'
+    });
+    
+
 
     $('.play-wrp').click(function(){
         $(this).toggleClass('active');
