@@ -1,0 +1,165 @@
+.schedule-wrp{
+    position: relative;
+}
+.schedule-wrp__line {
+    position: absolute;
+    top: 8.1%;
+    left: 4%;
+    z-index: 0;
+    transform: scale(-1,1);
+}
+.schedule-wrp__line_m{
+    display: none;
+}
+.schedule-name{
+    font-family: $bold;
+    line-height: normal;
+    font-size: 40px;
+    text-align: center;
+    color: #333333;
+    position: relative;
+    z-index: 1;
+}
+.schedule-name_p{
+    padding-bottom: 60px;
+}
+
+.schedule-contact_p{
+    padding-top: 160px;
+}
+// Schedule
+
+.schedule {
+    position: relative;
+    z-index: 1;
+}
+
+.schedule_p{
+    padding: 120px 0 70px;
+}
+.schedule-item{
+    position: relative;
+    width: 172px;
+    display: block;
+    text-align: center;
+    padding: 18px 0 13px;
+    margin: 0 auto 30px;
+    border: 1px solid  #6BA43A;
+    background: #6BA43A;
+    border-radius: 7px;
+    line-height: normal;
+    font-size: 18px;
+    color: #FFFFFF;
+    transition: 500ms;
+    -webkit-transition: 500ms;
+    cursor: default;
+}
+.schedule-item:hover{
+    background: #fff;
+    color: #6BA43A;
+    border: 1px solid  #6BA43A;
+}
+
+.schedule-item-wrp{
+    position: absolute;
+    top: 50%;
+    margin-top: -9.5px;
+}
+.schedule-item-wrp_r{
+    right: 100%;
+}
+.schedule-item-wrp_l{
+    left: 100%;
+}
+.schedule-item-wrp_l .schedule-item__arr {
+    position: absolute;
+    left: 0;
+}
+.schedule-item-wrp_l .schedule-item__text {
+    position: absolute;
+    left: 46px;
+    width: 250px;
+    text-align: left;
+    font-family: $light;
+}
+.schedule-item-wrp_r .schedule-item__arr {
+    position: absolute;
+    right: 0;
+    transform: scale(-1, 1);
+}
+.schedule-item-wrp_r .schedule-item__text {
+    position: absolute;
+    right: 46px;
+    width: 250px;
+    text-align: right;
+    font-family: $light;
+}
+
+// Schedule
+
+// Extra-lessons
+
+.extra-lessons{
+    background: #F9F9F9;
+    position: relative;
+}
+.extra-lessons__bird{
+    position: absolute;
+    left: 0;
+    top: 10%;
+}
+
+.extra-lessons_p{
+    padding: 70px 0 65px;
+}
+.extra-lessons-item{
+    position: relative;
+    z-index: 1;
+    background: #FFF8F1;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 7px;
+    padding: 48px 118px 38px;
+    text-align: center;
+    margin: 0 10px 40px;
+    transition: 500ms;
+    -webkit-transition: 500ms;
+}
+.extra-lessons-item__name{
+    line-height: normal;
+    font-size: 24px;
+    text-align: center;
+    color: #333333;
+    padding-bottom: 30px;
+}
+.extra-lessons-item-wrp {
+    position: relative;
+    margin-bottom: 15px;
+}
+.extra-lessons-item-wrp__line{
+    position: absolute;
+    left: 50%;
+    transform: translateX(50%);
+    background: #4F4F4F;
+    border-radius: 4px;
+    width: 1px;
+    height: 100%;
+}
+.extra-lessons-item-wrp__text{
+    width: 49%;
+    display: inline-block;
+}
+.extra-lessons-item-wrp__text div{
+    display: block;
+    padding-bottom: 15px;
+    font-family: $light;
+}
+.extra-lessons-item-wrp__text div:last-child{
+    padding-bottom: 0;
+}
+
+.extra-lessons-item:hover{
+    background: #fff;
+    box-shadow: 0px 30px 60px rgba(185, 135, 135, 0.15);
+}
+
+// Extra-lessons

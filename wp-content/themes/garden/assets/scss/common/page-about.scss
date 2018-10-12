@@ -74,6 +74,13 @@
     z-index: 111;
     position: relative;
 }
+.why-we__name span{
+    font-family: $bold;
+    line-height: normal;
+    font-size: 40px;
+    color: #F2F2F2;
+}
+
 .why-we__name_padd{
     padding-bottom: 60px;
 }

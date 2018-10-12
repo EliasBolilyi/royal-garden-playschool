@@ -86,6 +86,7 @@ a , a:hover ,a:focus{
   font-size: 14px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .sec-btn:before{
   background: $primary-color;

@@ -518,6 +518,7 @@
     }
     .video-block {
         height: 1100px;
+        padding-top: 175px;
     }
     .multi-section_deco {
         top: -200px;
@@ -541,6 +542,9 @@
     .play-wrp {
         left: 48%;
     }
+    .video-block {
+        padding-top: 75px;
+    }
 }
 @media (max-width: 1280px){
     .play-wrp {
@@ -553,8 +557,14 @@
         max-width: 100%;
         height: auto;
     }
+    video-block {
+        padding-top: 60px;
+    }
 }
 @media (max-width: 1024px){
+    .video-block {
+        padding-top: 0;
+    }
     .slider-first-block .slick-slide img {
         height: 600px;
         object-fit: cover;
@@ -623,6 +633,7 @@
 @media (max-width: 768px){
     .slider-first-block .slick-slide img {
         height: 768px;
+        width: 100%;
     }
     .slider-first-block .slick-next {
         bottom: 20%;
@@ -723,6 +734,10 @@
     .why-we__name {
         font-size: 30px;
     }
+    .why-we__name span{
+        display: none;
+    }
+
     .why-we__line {
         height: 100%;
     }
@@ -895,13 +910,14 @@
     }
     .block-contact-wrp_deco-t {
         width: 35px;
+
     }
     .block-contact-wrp_deco-b {
         width: 70px;
     }
     .block-contact-wrp_deco-t {
         position: absolute;
-        top: 0px;
+        top: -10px;
         left: 15px;
     }
     .multi-section_bird {
@@ -918,6 +934,17 @@
     }
     .block-mission {
         overflow: hidden;
+    }
+    .why-we__name_padd {
+        padding-bottom: 30px;
+    }
+    .slider-about__text-wrp div, .slider-about__text-wrp p {
+        line-height: 16px;
+        font-size: 10px;
+    }
+    .video-block__text p {
+        line-height: 16px;
+        font-size: 10px;
     }
 }
 @media (max-width: 375px){
@@ -1343,3 +1370,295 @@
 }
 
 // Page Meal
+
+// Schedule
+
+@media(min-width: 1441px){
+    .schedule-wrp__line {
+        left: 15%;
+    }
+}
+@media(max-width: 1366px){
+    .schedule-wrp__line {
+        left: 2%;
+    }
+    .extra-lessons__bird {
+        top: 10%;
+        transform: scale(0.7);
+        left: -4%;
+    }
+}
+@media(max-width: 1280px){
+    .schedule-wrp__line img {
+        height: 100%;
+    }
+}
+@media(max-width: 1280px){
+    .schedule-wrp__line img {
+        height: 100%;
+    }
+}
+@media(max-width: 1024px){
+    .schedule-wrp__line {
+        top: 7.8%;
+    }
+    .extra-lessons-item {
+        padding: 48px 70px 38px;
+    }
+    .schedule-name_p {
+        padding-bottom: 50px;
+    }
+    .extra-lessons__bird {
+        top: 5%;
+        transform: scale(.7);
+        left: -4%;
+    }
+}
+@media(max-width: 768px){
+    .schedule-wrp__line_d{
+        display: none;
+    }
+    .schedule-wrp__line_m{
+        display: block;
+    }
+    .schedule-wrp__line {
+        left: 6%;
+        top: 6.5%;
+    }
+    .extra-lessons__bird {
+        display: none;
+    }
+    .extra-lessons-item {
+        padding: 48px 115px 38px;
+    }
+    .extra-lessons-item {
+        width: 75%;
+        margin: 0 auto 40px;
+    }
+    .schedule_p {
+        padding: 96px 0 90px;
+    }
+}
+@media(max-width: 480px){
+    .schedule_p {
+        padding: 58px 0 70px;
+    }
+    .schedule-name_p {
+        padding-bottom: 40px;
+    }
+    .schedule-name {
+        font-size: 30px;
+    }
+    .schedule-item {
+        position: relative;
+        width: 140px;
+        display: block;
+        text-align: center;
+        padding: 15px 0 12px;
+        margin: 0 0 38px;
+        font-size: 16px;
+    }
+    .schedule-item-wrp_r {
+        left: 100%;
+        right: 0;
+    }
+    .schedule-item-wrp_r .schedule-item__arr {
+        right: auto;
+        left: 0;
+        transform: scale(1, -1);
+    }
+    .schedule-item-wrp_r .schedule-item__text {
+        left: 46px;
+        right: auto;
+        width: 170px;
+        text-align: left;
+    }
+    .schedule-item-wrp_l .schedule-item__text {
+        width: 170px;
+    }
+    .schedule-wrp__line {
+        display: none;
+    }
+    .extra-lessons_p {
+        padding: 35px 0 65px;
+    }
+    .extra-lessons-item {
+        width: 80%;
+        margin: 0 auto 30px;
+    }
+    .extra-lessons-item {
+        padding: 42px 0px 29px;
+    }
+    .schedule-contact_p {
+        padding-top: 60px;
+    }
+}
+@media (max-width:360px){
+    .schedule-item-wrp_l .schedule-item__arr {
+        left: -20px;
+        z-index: -1;
+    }
+    .schedule-item-wrp_r .schedule-item__arr {
+        left: -20px;
+        z-index: -1;
+    }
+    .schedule-item-wrp_l .schedule-item__text {
+        left: 30px;
+    }
+    .schedule-item-wrp_r .schedule-item__text {
+        left: 30px;
+    }
+}
+@media (max-width:320px){
+    .schedule-item {
+        width: 100px;
+        font-size: 14px;
+    }
+    .schedule-item-wrp_r .schedule-item__text {
+        width: 166px;
+        font-size: 14px;
+    }
+    .schedule-item-wrp_l .schedule-item__text {
+        width: 166px;
+        font-size: 14px;
+    }
+    schedule-item {
+        padding: 11px 0 8px;
+        margin: 0 0 28px;
+    }
+}
+
+// Schedule
+
+
+// Coast
+
+@media (max-width:1024px){
+    .servises-item {
+        width: 94%;
+    }
+}
+@media (max-width:768px){
+    .servises-item {
+        width: 100%;
+    }
+    .servises-item__name {
+        line-height: 25px;
+        padding-bottom: 30px;
+    }
+    .servises-item__text p {
+        line-height: 32px;
+    }
+    .servises-item_p {
+        padding: 40px 40px;
+    }
+    .extra-yoga__img img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        object-position: 0 0;
+    }
+    .extra-yoga__img {
+        padding-bottom: 50px;
+    }
+    .extra-yoga__name {
+        text-align: center;
+        width: 200%;
+    }
+    .extra-yoga__btn {
+        margin-top: 40px;
+        margin-right: -125px;
+        float: right;
+    }
+    .servises__bird {
+        position: absolute;
+        right: -6%;
+        bottom: -8%;
+        transform: scale(-0.7,0.7);
+    }
+    // .extra-yoga__text-2 {
+    //     margin-top: 0;
+    // }
+    .extra-yoga-item:nth-child(2n+1){
+
+        .col-md-12{
+            order: 0 !important;
+        }
+    }
+}
+
+@media (max-width:425px){
+    .servises-item {
+        height: 100%;
+        width: 100%;
+        
+    }
+    .servises [class*="col"]{
+        margin-bottom: 30px;
+    }
+    .servises-item_p {
+        padding: 40px 20px;
+    }
+    .servises-item__btn {
+        position: static;
+    }
+    .servises-item__text {
+        padding-bottom: 40px;
+    }
+    .servises-name {
+        font-size: 30px;
+    }
+    .servises_p {
+        padding: 95px 0;
+    }
+    .servises-name_p {
+        padding-bottom: 40px;
+    }
+    .servises-item__name {
+        line-height: 38px;
+        font-size: 24px;
+    }
+    .servises-item__text p {
+        font-size: 14px;
+        line-height: 29px;
+    }
+    .servises__bird {
+        bottom: 1%;
+        right: -10%;
+    }
+    .extra-yoga__text , .extra-yoga__text p{
+        margin-left: 0;
+        line-height: 16px;
+        font-size: 10px;
+    }
+    .extra-yoga__text-2 , .extra-yoga__text-2 p{
+        margin-top: -37px;
+        line-height: 16px;
+        font-size: 10px;
+    }
+    .extra-yoga__name {
+        line-height: 28px;
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+    .extra-yoga__img img {
+        height: 322px;
+    }
+    .extra-servises_p {
+        padding: 0 0 178px;
+    }
+    .extra-yoga__img img {
+        object-position: 50% 0;
+    }
+    .extra-yoga__img {
+        padding-bottom: 42px;
+    }
+    .extra-yoga__btn {
+        margin-right: -115px;
+    }
+    .extra-yoga__name {
+        width: 220%;
+    }
+}
+
+// Coast

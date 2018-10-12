@@ -46,7 +46,7 @@ Template Name: About us
 
         <div class="container">
 
-            <h2 class="why-we__name why-we__name_padd">Почему мы (Концепция сада)</h2>
+            <h2 class="why-we__name why-we__name_padd">Почему мы <span>(Концепция сада)</span></h2>
 
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-4 col-12">

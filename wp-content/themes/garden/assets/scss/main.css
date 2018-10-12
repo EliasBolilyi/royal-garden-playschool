@@ -5,6 +5,8 @@
 @import "common/index.scss";
 @import "common/page-about.scss";
 @import "common/page-meal.scss";
+@import "common/page-schedule.scss";
+@import "common/page-coast.scss";
 @import "common/modal-window.scss";
 @import "common/input.scss";
 @import "common/media-queries.scss";

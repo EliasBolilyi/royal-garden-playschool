@@ -74,7 +74,11 @@
 		<div class="main-header">
 			<div class="container justify-content-center">
 
-				<div class="logo"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/build/images/logo.svg" alt=""></a></div>
+				<?php if (is_front_page() || is_home()) : ?>
+					<div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/build/images/logo.svg" alt=""></div>
+				<?php else : ?>
+					<div class="logo"><a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/build/images/logo.svg" alt=""></a></div>
+				<?php endif; ?>
 
 				<div class="burger">
 					<div id="nav-icon" class="nav-icon" class="visible-xs visible-sm visible-md visible-lg">
