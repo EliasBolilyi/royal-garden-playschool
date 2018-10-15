@@ -175,7 +175,7 @@
 				<div class=" cols">
 					<div class="col-team" ontouchstart="this.classList.toggle('hover');">
 						<div class="team-container-wrp">
-							<div class="front" style="background-image: url('http://localhost:8888/royal-garden-playschool/wp-content/themes/garden/build/images/main-page/pers2.jpg')">
+							<div class="front" style="background-image: url('<?php echo get_home_url(); ?>/wp-content/themes/garden/build/images/main-page/pers2.jpg')">
 								<div class="inner">
 									<span>Имя Фамилия</span>
 								</div>
@@ -192,7 +192,7 @@
 					</div>
 					<div class="col-team" ontouchstart="this.classList.toggle('hover');">
 						<div class="team-container-wrp">
-							<div class="front" style="background-image: url('http://localhost:8888/royal-garden-playschool/wp-content/themes/garden/build/images/main-page/pers1.jpg')">
+							<div class="front" style="background-image: url('<?php echo get_home_url(); ?>/wp-content/themes/garden/build/images/main-page/pers1.jpg')">
 								<div class="inner">
 									<span>Имя Фамилия</span>
 								</div>
@@ -209,7 +209,7 @@
 					</div>
 					<div class="col-team hidden_tab" ontouchstart="this.classList.toggle('hover');">
 						<div class="team-container-wrp">
-							<div class="front" style="background-image: url('http://localhost:8888/royal-garden-playschool/wp-content/themes/garden/build/images/main-page/pers2.jpg')">
+							<div class="front" style="background-image: url('<?php echo get_home_url(); ?>/wp-content/themes/garden/build/images/main-page/pers2.jpg')">
 								<div class="inner">
 									<span>Имя Фамилия</span>
 								</div>

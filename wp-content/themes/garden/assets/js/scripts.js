@@ -17,6 +17,17 @@ $(document).ready(function(){
         nextArrow: '<button type="button" class="slick-next"><img src="http://localhost:8888/royal-garden-playschool/wp-content/themes/garden/build/images/next.svg"></button>'
     });
 
+    $('.gallery-slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<button type="button" class="slick-prev"><img src="http://localhost:8888/royal-garden-playschool/wp-content/themes/garden/build/images/prev.svg"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="http://localhost:8888/royal-garden-playschool/wp-content/themes/garden/build/images/next.svg"></button>'
+    });
+
+
     $('.slider-about').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -95,6 +106,22 @@ $(document).ready(function(){
             }
           }
       });
+
+    var swiper = new Swiper('.event-slider', {
+    slidesPerView: 1,
+    // freeMode: true,
+    centeredSlides: true,
+    pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+        clickable: true,
+    },
+    breakpoints: {
+        480: {
+            slidesPerView: 1,
+        }
+        }
+    });
 
 });
 

@@ -17,29 +17,29 @@ Template Name: News
 
             <h2 class="news-name news-name_p">Именинники месяца</h2>
 
-            <div class="row align-items-center">
+            <div class="row align-items-center justify-content-center">
                 
-                <div class="col-lg-6">
-                    <div class="birthday-item">
 
-                        <div class="row">
+                <?php $pc = new WP_Query('cat=9&orderby=date&posts_per_page=20'); ?>
+                <?php while ($pc->have_posts()) : $pc->the_post(); ?>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="birthday-item">
 
-                            <div class="col-lg-4">
-                                <div class="birthday-item__img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/build/images/news/birthday.jpg" alt="" class="img-fluid">
+                            <div class="row no-gutters">
+
+                                <div class="col-lg-4 col-md-4 col-4">
+                                    <div class="birthday-item__img">
+                                        <?php echo the_post_thumbnail('full', array('class' => 'img-fluid')) ?>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-8">
+                                <div class="col-lg-8 col-md-8 col-8">
 
-                                <div class="birthday-item__text-wrp">
+                                    <div class="birthday-item__text-wrp">
 
-                                    <div class="birthday-item__title">Поздравляем</div>
-                                    <div class="birthday-item__name">Иванова Ивановича</div>
-                                    <div class="birthday-item__text">
-                                        Тебе желаю море счастья,
-                                        Улыбок, солнца и тепла.
-                                        Чтоб жизнь была еще прекрасней,
-                                        Удача за руку вела!
+                                        <div class="birthday-item__title">Поздравляем</div>
+                                        <div class="birthday-item__name"><?php the_title(); ?></div>
+                                        <div class="birthday-item__text"><?php the_content(); ?></div>
+
                                     </div>
 
                                 </div>
@@ -47,40 +47,10 @@ Template Name: News
                             </div>
 
                         </div>
-
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="birthday-item">
+                <?php endwhile; ?> 
+                <?php wp_reset_postdata(); // reset the query ?>
 
-                        <div class="row">
-
-                            <div class="col-lg-4">
-                                <div class="birthday-item__img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/build/images/news/birthday.jpg" alt="" class="img-fluid">
-                                </div>
-                            </div>
-                            <div class="col-lg-8">
-
-                                <div class="birthday-item__text-wrp">
-
-                                    <div class="birthday-item__title">Поздравляем</div>
-                                    <div class="birthday-item__name">Иванова Ивановича</div>
-                                    <div class="birthday-item__text">
-                                        Тебе желаю море счастья,
-                                        Улыбок, солнца и тепла.
-                                        Чтоб жизнь была еще прекрасней,
-                                        Удача за руку вела!
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
 
             </div>
 
@@ -92,136 +62,38 @@ Template Name: News
 
         <h2 class="news-name news-name_p">Поздравление с праздниками</h2>
 
-        <div class="event-slider">
+        <div class="event-slider swiper-container">
 
-            <div class="event-slide">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="event-slide__text-wrp">
-                                <div class="event-slide__title">Поздравляем Вас С Новым 2019 годом</div>
-                                <div class="event-slide__text">
-                                    Желаю в этот Новый год
-                                    Поменьше грусти и забот,
-                                    Побольше счастья и добра,
-                                    Улыбок, нежности, тепла!
+            <div class="swiper-wrapper">
 
-                                    Чтоб были верными друзья
-                                    И очень дружною семья,
-                                    Чтоб каждый день удачным был,
-                                    И чтоб на всё хватало сил!
 
-                                    Ну а ещё пусть Новый год
-                                    Побольше денег принесёт,
-                                    Здоровья, мира и любви,
-                                    Чтоб в сердце не было зимы!
+                <?php $pc = new WP_Query('cat=10&orderby=date&posts_per_page=20'); ?>
+                <?php while ($pc->have_posts()) : $pc->the_post(); ?>
+                    <div class="swiper-slide event-slide">
+                        <div class="container">
+                            <div class="row align-items-center no-gutters">
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="event-slide__text-wrp">
+                                        <div class="event-slide__title">Поздравляем Вас </div> 
+                                        <div class="event-slide__name"><?php the_title(); ?></div>
+                                        
+                                        <div class="event-slide__text"><?php the_content(); ?></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="event-slide__img">
+                                        <?php echo the_post_thumbnail('full', array('class' => 'img-fluid')) ?>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="event-slide__img">
-                                <img src="<?php echo get_template_directory_uri(); ?>/build/images/news/news-slide.jpg" alt="">
-                            </div>
-                        </div>
                     </div>
-                </div>
+                <?php endwhile; ?> 
+                <?php wp_reset_postdata(); // reset the query ?>
+
             </div>
-            <div class="event-slide">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="event-slide__text-wrp">
-                                <div class="event-slide__title">Поздравляем Вас С Новым 2019 годом</div>
-                                <div class="event-slide__text">
-                                    Желаю в этот Новый год
-                                    Поменьше грусти и забот,
-                                    Побольше счастья и добра,
-                                    Улыбок, нежности, тепла!
-
-                                    Чтоб были верными друзья
-                                    И очень дружною семья,
-                                    Чтоб каждый день удачным был,
-                                    И чтоб на всё хватало сил!
-
-                                    Ну а ещё пусть Новый год
-                                    Побольше денег принесёт,
-                                    Здоровья, мира и любви,
-                                    Чтоб в сердце не было зимы!
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="event-slide__img">
-                                <img src="<?php echo get_template_directory_uri(); ?>/build/images/news/news-slide.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="event-slide">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="event-slide__text-wrp">
-                                <div class="event-slide__title">Поздравляем Вас С Новым 2019 годом</div>
-                                <div class="event-slide__text">
-                                    Желаю в этот Новый год
-                                    Поменьше грусти и забот,
-                                    Побольше счастья и добра,
-                                    Улыбок, нежности, тепла!
-
-                                    Чтоб были верными друзья
-                                    И очень дружною семья,
-                                    Чтоб каждый день удачным был,
-                                    И чтоб на всё хватало сил!
-
-                                    Ну а ещё пусть Новый год
-                                    Побольше денег принесёт,
-                                    Здоровья, мира и любви,
-                                    Чтоб в сердце не было зимы!
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="event-slide__img">
-                                <img src="<?php echo get_template_directory_uri(); ?>/build/images/news/news-slide.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="event-slide">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="event-slide__text-wrp">
-                                <div class="event-slide__title">Поздравляем Вас С Новым 2019 годом</div>
-                                <div class="event-slide__text">
-                                    Желаю в этот Новый год
-                                    Поменьше грусти и забот,
-                                    Побольше счастья и добра,
-                                    Улыбок, нежности, тепла!
-
-                                    Чтоб были верными друзья
-                                    И очень дружною семья,
-                                    Чтоб каждый день удачным был,
-                                    И чтоб на всё хватало сил!
-
-                                    Ну а ещё пусть Новый год
-                                    Побольше денег принесёт,
-                                    Здоровья, мира и любви,
-                                    Чтоб в сердце не было зимы!
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="event-slide__img">
-                                <img src="<?php echo get_template_directory_uri(); ?>/build/images/news/news-slide.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
 
         </div>
 
@@ -232,9 +104,9 @@ Template Name: News
         <h2 class="news-name news-name_p">Мероприятия</h2>
 
         <div class="container">
-            <div class="row">
+            <div class="row no-gutters">
 
-                <div class="col-lg-8">
+                <div class="col-lg-7 col-md-4 col-4">
 
                     <div class="calender-bg">
                         <img src="<?php echo get_template_directory_uri(); ?>/build/images/news/news-event.jpg" alt="">
@@ -242,7 +114,7 @@ Template Name: News
                     </div>
 
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-5 col-md-8 col-8">
                     <div class="calender">
                         <img src="<?php echo get_template_directory_uri(); ?>/build/images/news/calender.png" alt="">
                     </div> 

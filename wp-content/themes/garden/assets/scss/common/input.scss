@@ -3,10 +3,18 @@
 	cursor: pointer;
 	background-image: url('../images/input/radio.png');
 }
-
-.custom_checkbox input, .custom_radio input {
-	display: none;
+.custom_checkbox{
+    display: inline-block;
+    vertical-align: middle;
+	cursor: pointer;
+    background-image: url('../../build/images/signup/checkbox.png');
+    // background-color: #fff;
 }
+
+
+// .custom_checkbox input, .custom_radio input {
+// 	display: none;
+// }
 
 /* custom select */
 

@@ -1,5 +1,6 @@
 @import "common/variables.scss";
 @import "common/main.scss";
+@import "common/input.scss";
 @import "common/header.scss";
 @import "common/footer.scss";
 @import "common/index.scss";
@@ -7,7 +8,9 @@
 @import "common/page-meal.scss";
 @import "common/page-schedule.scss";
 @import "common/page-coast.scss";
+@import "common/page-gallery.scss";
 @import "common/page-news.scss";
+@import "common/page-contact.scss";
+@import "common/page-signup.scss";
 @import "common/modal-window.scss";
-@import "common/input.scss";
 @import "common/media-queries.scss";

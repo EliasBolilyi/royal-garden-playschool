@@ -149,7 +149,7 @@
 <!-- <script src="<?php echo get_template_directory_uri(); ?>/build/js/slick.min.js"></script> -->
 <script src="<?php echo get_template_directory_uri(); ?>/build/lib/swiper/swiper.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/build/lib/input/number.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/build/lib/input/checkbox.radio.js"></script>
+<!-- <script src="<?php echo get_template_directory_uri(); ?>/build/lib/input/checkbox.radio.js"></script> -->
 <script src="<?php echo get_template_directory_uri(); ?>/build/lib/input/select-custom.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/build/lib/animate/animate-css.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/build/lib/animate/waypoints.min.js"></script>

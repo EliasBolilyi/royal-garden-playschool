@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
-	var checkbox_w = 16; // Ширина чекбокса
-	var checkbox_h = 17; // Высота чекбокса
+	var checkbox_w = 20; // Ширина чекбокса
+	var checkbox_h = 20; // Высота чекбокса
 	var radio_w = 15; // Ширина радио-кнопки
 	var radio_h = 15; // Высота радио-кнопки
 
