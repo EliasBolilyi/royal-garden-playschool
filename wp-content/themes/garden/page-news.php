@@ -11,6 +11,12 @@ Template Name: News
         <h2 class="news-bg__name">News</h2>
     </section>
 
+    <?php if ( get_field('hide-birthday') == true ) { ?>
+
+    <section class="birthday-hide_p"></section>
+
+    <?php } else { ?>
+    
     <section class="birthday birthday_p">
 
         <div class="container">
@@ -58,6 +64,15 @@ Template Name: News
 
     </section>
 
+    <?php } ?>
+
+
+
+    <?php if ( get_field('hide-event') == true ) { ?>
+
+    
+
+    <?php } else { ?>
     <section class="event-slider-wrp event-slider-wrp_p">
 
         <h2 class="news-name news-name_p">Поздравление с праздниками</h2>
@@ -97,9 +112,23 @@ Template Name: News
 
         </div>
 
+        <div class="event-slider-wrp__tree">
+            <img src="<?php echo get_template_directory_uri(); ?>/build/images/news/three.png" alt="">
+        </div>
+        <div class="event-slider-wrp__bird">
+            <img src="<?php echo get_template_directory_uri(); ?>/build/images/news/news-bird.png" alt="">
+        </div>
+
     </section>
 
+    <?php } ?>
+    
+
     <section class="calender-wrp calender-wrp_p">
+
+        <div class="event-slider-wrp__tree-2">
+            <img src="<?php echo get_template_directory_uri(); ?>/build/images/news/three.png" alt="">
+        </div>
 
         <h2 class="news-name news-name_p">Мероприятия</h2>
 
@@ -115,8 +144,10 @@ Template Name: News
 
                 </div>
                 <div class="col-lg-5 col-md-8 col-8">
-                    <div class="calender">
-                        <img src="<?php echo get_template_directory_uri(); ?>/build/images/news/calender.png" alt="">
+                    <div id="calender" class="calender">
+                        <!-- <img src="<?php echo get_template_directory_uri(); ?>/build/images/news/calender.png" alt=""> -->
+                        <?php echo do_shortcode('[ecwd id="246"]'); ?>
+                        <!-- <?php dynamic_sidebar( 'Calendar' ); ?> -->
                     </div> 
                 </div>
 

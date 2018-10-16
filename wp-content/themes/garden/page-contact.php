@@ -7,7 +7,6 @@ Template Name: Contact
 <?php get_header(); ?>
 
     <section class="map">
-        <!-- <img src="<?php echo get_template_directory_uri(); ?>/build/images/contact/map.jpg" alt=""> -->
         <?php echo do_shortcode('[intergeo id="wIjM"][/intergeo]'); ?>
     </section>
 

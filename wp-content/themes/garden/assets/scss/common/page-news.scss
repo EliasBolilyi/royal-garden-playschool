@@ -9,6 +9,9 @@
 .news-name_p{
     padding-bottom: 60px;
 }
+.birthday-hide_p{
+    padding-top: 50px;
+}
 
 // Bg
 
@@ -53,6 +56,11 @@
     border-radius: 7px 7px 8px 8px;
     overflow: hidden;
     margin-bottom: 40px;
+    transition: 500ms;
+    -webkit-transition: 500ms;
+}
+.birthday-item:hover{
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
 }
 .birthday-item__img{
     height: 269px;
@@ -94,6 +102,25 @@
 
 .event-slide {
     padding: 100px 0 50px;
+}
+.event-slider-wrp{
+    position: relative;
+}
+.event-slider-wrp__tree{
+    position: absolute;
+    right: 0;
+    transform: scale(-1,1);
+    top: 0;
+}
+.event-slider-wrp__bird{
+    position: absolute;
+    left: 10%;
+    top: 15%;
+}
+.event-slider-wrp__tree2{
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 .event-slider-wrp_p{
     padding: 100px 0 150px;
@@ -165,7 +192,7 @@
 .calender-bg{
     position: relative;
     margin-right: -7px;
-    height: 400px;
+    height: 100%;
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
 
     img{
@@ -195,3 +222,197 @@
 }
 
 // Calender
+
+
+// Calendar widget
+
+.current-month a {
+    display: none;
+}
+#246 .ecwd_theme_calendar_grey .calendar-head .current-month div {
+    font-size: 24px !important;
+    line-height: 16px !important;
+    display: inline-block;
+}
+#246 .ecwd_theme_calendar_grey .calendar-head {
+    background: #A38B39 !important;
+    border: 0;
+}
+#246 .ecwd_theme_calendar_grey .calendar-head .current-month {
+    font-size: 24px !important;
+}
+#246 .ecwd_theme_calendar_grey .calendar-head .current-month {
+    border-left: 0;
+    border-right: 0;
+}
+table.cal_blue.ecwd_calendar_container .day-without-date div {
+    text-align: center;
+    font-size: 0;
+}
+
+.ecwd_theme_calendar_grey:not(.calendar_widget_content) {
+    width: 100% !important;
+    padding: 31px;
+    background: #000;
+    background: #A38B39;
+    border-radius: 7px;
+}
+table.cal_blue.ecwd_calendar_container .day-with-date, table.cal_blue.ecwd_calendar_container .open-details, table.cal_blue.ecwd_calendar_container .day-without-date {
+    vertical-align: text-center;
+    text-align: center;
+    height: 57px;
+}
+.ecwd_theme_calendar_grey .ecwd-search button, .ecwd_theme_calendar_grey .ecwd-search button:hover {
+    display: none;
+}
+#calender .ecwd_theme_calendar_grey table.cal_blue.ecwd_calendar_container .day-with-date .day-number {
+    background: transparent !important;
+}
+#calender .ecwd_theme_calendar_grey table.cal_blue.ecwd_calendar_container .weekend {
+    background: transparent !important;
+}
+#calender .ecwd_theme_calendar_grey .calendar-head {
+    background: transparent !important;
+    border: 0;
+}
+#calender .ecwd_theme_calendar_grey .calendar-head .previous {
+    border-right: 0 !important;
+}
+#calender .ecwd_theme_calendar_grey .calendar-head .current-month {
+    border-left: 0 !important;
+    border-right: 0 !important;
+}
+#calender .ecwd_theme_calendar_grey .calendar-head .next {
+    border-left: 0 !important;
+}
+#calender .ecwd_theme_calendar_grey table.cal_blue.ecwd_calendar_container .day-without-date {
+    background: transparent !important;
+}
+#calender table.cal_blue.ecwd_calendar_container {
+    background: transparent !important;
+    font-family: Futura;
+    margin: 0 0 0 0 !important;
+}
+#calender .ecwd_theme_calendar_grey table.cal_blue.ecwd_calendar_container .day-with-date {
+    border: 0 !important;
+}
+#calender .ecwd_calendar_container > tbody > tr >td {
+    vertical-align: middle !important;
+}
+#calender .ecwd_theme_calendar_grey .calendar-head .current-month {
+    color: #fff!important;
+}
+#calender .ecwd_theme_calendar_grey .calendar-head .current-month div {
+    color: #fff !important;
+    display: inline-block;
+    font-size: 24px !important;
+    text-transform: uppercase;
+}
+#calender .ecwd_theme_calendar_grey table.cal_blue.ecwd_calendar_container .day-with-date .day-number {
+    color: #fff !important;
+    font-size: 15px !important;
+}
+#calender .ecwd_theme_calendar_grey table.cal_blue.ecwd_calendar_container .day-with-date {
+    background: transparent !important;
+}
+#calender table.cal_blue.ecwd_calendar_container .week-start {
+    border-left: 0;
+}
+#calender table.cal_blue.ecwd_calendar_container td {
+    border-width: 0;
+}
+#calender .ecwd_theme_calendar_grey table.cal_blue.ecwd_calendar_container .normal-day-heading, .ecwd_theme_calendar_grey table.cal_blue.ecwd_calendar_container .weekend-heading {
+    border: transparent !important;
+}
+#calender .ecwd_theme_calendar_grey table.cal_blue.ecwd_calendar_container .normal-day-heading {
+    background: transparent !important;
+}
+table.cal_blue.ecwd_calendar_container th > div {
+    position: relative;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: $bold;
+}
+#calender .ecwd_theme_calendar_grey .calendar-head .current-month {
+    font-size: 24px !important;
+}
+#calender .ecwd_theme_calendar_grey table.cal_blue.ecwd_calendar_container .day-with-date.current-day.has-events {
+    background: #FF5147 !important;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+}
+#calender .ecwd_theme_calendar_grey table.cal_blue.ecwd_calendar_container .day-with-date.has-events {
+    background: #C7B887 !important;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    position: relative;
+}
+table.cal_blue.ecwd_calendar_container td ul {
+    margin: 0;
+    padding: 1px 0 !important;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+#calender .ecwd_theme_calendar_grey .cal_blue.ecwd_calendar_container .events a span{
+    color: transparent;
+}
+.ecwd_theme_calendar_grey div.ecwd-page-full table.cal_blue div.event-details, .ecwd_theme_calendar_grey .ecwd-poster-board .ecwd-poster-item .ecwd-event-content {
+    color: #000000 !important;
+    border-radius: 7px;
+}
+.ecwd_theme_calendar_grey div.ecwd-page-full table.cal_blue div.event-details, .ecwd_theme_calendar_grey .ecwd-poster-board .ecwd-poster-item .ecwd-event-content {
+    border: transparent !important;
+}
+#calender .ecwd_theme_calendar_grey .cal_blue.ecwd_calendar_container .events a, .ecwd_theme_calendar_grey .cal_blue.ecwd_calendar_container .events span.ecwd_open_event_popup {
+    font-size: 25px !important;
+    padding-bottom: 30px;
+    font-style: normal;
+}
+#calender  div.ecwd-page-full table.cal_blue div.event-details-container {
+    text-align: center;
+    border-radius: 7px; 
+}
+.ecwd-time {
+    display: inline-block;
+    width: 49%;
+}
+div.ecwd-page-full table.cal_blue div.ecwd-event-arrow, div.ecwd-page-full table.cal_blue div.ecwd-event-arrow-right {
+    top: 30px;
+}
+.event-details-title {
+    padding: 30px 0 22px;
+}
+.ecwd-detalis p {
+    font-family: $light;
+    font-style: normal;
+    line-height: 26px;
+    font-size: 18px;
+    text-align: center;
+    color: #4F4F4F;
+    padding: 30px 0 40px;
+}
+
+.previous a {
+    width: 36px;
+    height: 37px;
+    background-image: url(../../build/images/news/left.png);
+}
+.previous a span{
+    display: none;
+}
+
+.next a {
+    width: 36px;
+    height: 37px;
+    background-image: url(../../build/images/news/right.png);
+}
+.next a span{
+    display: none;
+}
+
+
+// Calendar widget

@@ -1,0 +1,162 @@
+
+
+// First page account
+
+.account {
+    position: relative;
+    min-height: 100vh;
+}
+.account_p{
+    padding-top: 114px;
+}
+.account-tree{
+    position: absolute;
+    left: 0;
+    bottom: 20%;
+}
+.account-bird{
+    position: absolute;
+    right: 20%;
+    bottom: 35px;
+}
+.account__title{
+    font-family: $bold;
+    line-height: 63px;
+    font-size: 40px;
+    text-align: center;
+    color: #333333;
+    padding-bottom: 50px;
+}
+.account-item{
+    margin: 0 25px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid #A38B39;
+    border-radius: 7px;
+    padding: 68px 98px;
+}
+.account-item__title{
+    font-family: $bold;
+    line-height: 38px;
+    font-size: 24px;
+    text-align: center;
+    color: #333333;
+    padding-bottom: 30px;
+}
+.account-item__text{
+    line-height: 26px;
+    font-size: 16px;
+    text-align: justify;
+    color: #4F4F4F;
+    padding-bottom: 35px;
+}
+.account-item__btn{
+    display: table;
+    margin: 0 auto;
+}
+
+// First page account
+
+// Video
+
+.video-traslation {
+
+}
+.video-traslation_p{
+    padding: 114px 0 140px;
+}
+.video-traslation-item{
+    margin: 0 30px 50px;
+}
+.video-traslation-item img{
+    border-radius: 7px;
+}
+.video-traslation-item__title{
+    line-height: 26px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #242424;
+    padding-top: 22px;
+}
+.video-traslation-item__group{
+    line-height: 26px;
+    font-size: 16px;
+    color: rgba(36, 36, 36, 0.8);
+}
+.video-cam{
+    padding: 75px 0 20px;
+}
+
+.video-cam-w {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+// .video-cam-w video{
+//     border-radius: 7px;
+//     overflow: hidden; 
+// }
+
+
+// Video
+
+// Bill
+
+.bill_p{
+    padding: 35px 0 240px;
+}
+.bill-wrp{
+    background: #FFF8F1;
+    /* оливковый */
+    border: 1px solid #A38B39;
+    box-shadow: 30px 30px 80px rgba(0, 0, 0, 0.06);
+    border-radius: 7px;
+    padding: 72px 120px 132px;
+}
+
+.account__title_bill-p{
+    padding-bottom: 107px;
+}
+.bill__title{
+    line-height: 39px;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #333333;
+}
+.bill__text{
+    line-height: 29px;
+    font-size: 18px;
+    letter-spacing: 0.09em;
+    color: #4F4F4F;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+.bill__number{
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+    line-height: 16px;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    color: #5C5C5C;
+    background: #FFFFFF;
+    border-radius: 30px;
+    padding: 20px 0 16px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 126px;
+    text-align: center;
+}
+.bill-row_p{
+    padding-bottom: 54px;
+}
+.bill-row_p-top{
+    margin-top: -10px;
+    padding-top: 40px;
+    border-top: 2px solid #A38B39;
+}
+.bill__item{
+    display: inline-block;
+    width: 49%;
+}
+
+// Bill

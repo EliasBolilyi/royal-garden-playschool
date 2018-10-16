@@ -12,5 +12,6 @@
 @import "common/page-news.scss";
 @import "common/page-contact.scss";
 @import "common/page-signup.scss";
+@import "common/page-account.scss";
 @import "common/modal-window.scss";
 @import "common/media-queries.scss";

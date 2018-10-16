@@ -115,6 +115,8 @@
     color: #FFFFFF;
     align-items: center;
     justify-content: center;
+    transition: 500ms;
+    -webkit-transition: 500ms;
     span{
         font-size: 16px;
         color: #fff;
@@ -162,6 +164,15 @@
     bottom: 27%;
     left: 49%;
     transform: translateX(-50%);
+}
+
+.description-numb__item:hover {
+    background: #F1EEE1;
+    color: #6BA43A;
+    border: 1px solid #A38B39;
+}
+.description-numb__item:hover span {
+    color: #6BA43A;
 }
 
 //Main description block

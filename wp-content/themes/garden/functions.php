@@ -11,45 +11,8 @@ add_action( 'init', 'register_my_menus' );
 function arphabet_widgets_init() {
     register_sidebar(
         array(
-            'name' => 'Instagram',
+            'name' => 'Calendar',
             'id' => 'sidebar1',
-            'before_widget' => '',
-            'after_widget' => '',
-            'before_title' => '',
-            'after_title' => '',
-        ));
-    register_sidebar(
-        array(
-            'name' => 'Instagram2',
-            'id' => 'sidebar2',
-            'before_widget' => '',
-            'after_widget' => '',
-            'before_title' => '',
-            'after_title' => '',
-        ));
-    register_sidebar(
-        array(
-            'name' => 'Главная заголовок',
-            'id' => 'sidebar3',
-            'before_widget' => '',
-            'after_widget' => '',
-            'before_title' => '',
-            'after_title' => '',
-        ));
-    register_sidebar(
-        array(
-            'name' => 'Главная текст',
-            'id' => 'sidebar4',
-            'before_widget' => '',
-            'after_widget' => '',
-            'before_title' => '',
-            'after_title' => '',
-        ));
-
-    register_sidebar(
-        array(
-            'name' => 'Номер',
-            'id' => 'sidebar5',
             'before_widget' => '',
             'after_widget' => '',
             'before_title' => '',

@@ -123,5 +123,10 @@ $(document).ready(function(){
         }
     });
 
+    var div = document.querySelector('#calender  .events a'),
+    txt = div.querySelector('a').textContent;
+    div.textContent = txt;
+    
+
 });
 

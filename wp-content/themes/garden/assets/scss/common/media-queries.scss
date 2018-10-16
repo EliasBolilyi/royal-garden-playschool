@@ -1567,6 +1567,7 @@
     }
     .extra-yoga__btn {
         margin-top: 40px;
+        margin-left: 0;
         margin-right: -125px;
         float: right;
     }
@@ -1672,8 +1673,31 @@
     .birthday-item__name {
         padding-bottom: 18px;
     }
-    .calender-bg {
-        height: 335px;
+    // .calender-bg {
+    //     height: 335px;
+    // }
+    .event-slider-wrp__tree{
+        display: none;
+    }
+    .event-slider-wrp__bird{
+        display: none;
+    }
+    .event-slider-wrp__tree2{
+        display: none;
+    }
+    #calender .ecwd-page-full table.cal_blue.ecwd_calendar_container .has-events:after {
+        display: none;
+    }
+    #calender .calendar_main .ecwd_calendar.ecwd-page-full div.event-details {
+        font-size: 1.15em !important;
+        width: 100%;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 0;
+        background: #fff;
+        border-radius: 7px;
+        padding: 20px 15px;
+        text-align: center;
     }
 }
 @media (max-width:768px){
@@ -1702,9 +1726,9 @@
         width: 100%;
         height: 400px;
     }
-    .calender-bg {
-        height: 398px;
-    }
+    // .calender-bg {
+    //     height: 398px;
+    // }
     .calender-bg__title {
         display: none;
     }
@@ -1780,9 +1804,9 @@
         width: 20px;
         height: 20px;
     }
-    .calender-bg {
-        height: 100%;
-    }
+    // .calender-bg {
+    //     height: 100%;
+    // }
     .calender-wrp_p {
         padding-bottom: 168px;
     }
@@ -2053,3 +2077,136 @@
 }
 
 // Contact 
+
+
+// Account
+
+@media (max-width: 1440px){
+    .account_p {
+        padding-bottom: 374px;
+    }
+    .account-bird {
+        right: 15%;
+    }
+    .account-tree {
+        bottom: 10%;
+    }
+}
+@media (max-width: 1024px){
+    .account-tree {
+        display: none;
+    }
+    .account-bird {
+        right: 5%;
+    }
+    .account-item {
+        padding: 68px 70px;
+    }
+    .account-item {
+        padding: 68px 70px;
+    }
+    .bill-wrp {
+        padding: 57px 25px 100px;
+    }
+    
+}
+@media (max-width: 768px){
+    .account-item {
+        margin: 0 auto 30px;
+        width: 80%;
+    }
+    .account_p {
+        padding-top: 80px;
+        padding-bottom: 183px;
+    }
+    .account__title_p-video{
+        padding-bottom: 66px;
+    }
+    .video-cam {
+        padding: 56px 0;
+    }
+    .video-traslation_p {
+        padding: 90px 0 140px;
+    }
+    .account__title_bill-p {
+        padding-bottom: 38px;
+    }
+}
+@media (max-width: 425px){
+    .account__title {
+        line-height: 31px;
+        font-size: 30px;
+        padding-bottom: 25px;
+    }
+    .account-item__title {
+        line-height: 21px;
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+    .account-item {
+        padding: 37px 38px;
+    }
+    .account-item__text {
+        line-height: 16px;
+        font-size: 10px;
+        padding-bottom: 15px;
+    }
+    .account-item {
+        margin: 0 auto 15px;
+        width: 90%;
+    }
+    .account {
+        min-height: auto;
+    }
+    .account-bird {
+        z-index: 111111;
+        right: 3%;
+    }
+    .video-traslation-item {
+        margin: 0 0 20px;
+    }
+    .video-traslation-item img {
+        border-radius: 7px;
+        max-width: 100%;
+        height: auto;
+    }  
+    .account__title_p-video{
+        padding-bottom: 57px;
+    }  
+    .video-traslation_p {
+        padding: 70px 0 140px;
+    }
+    .bill__title {
+        line-height: 15px;
+        font-size: 10px;
+    }
+    .bill__text {
+        line-height: 13px;
+        font-size: 10px;
+        display: block;
+        text-align: center;
+        padding-right: 0;
+        padding-bottom: 10px;
+    }
+    .bill__number {
+        box-shadow: 0 10px 20px rgba(0,0,0,.05);
+        line-height: 11px;
+        font-size: 10px;
+        padding: 12px 0 11px;
+        display: block;
+        margin: 0 auto 6px;
+        width: 86px;
+        text-align: center;
+    }
+    .account__title {
+        padding-bottom: 55px;
+    }
+}
+@media (max-width: 425px){
+    .bill__item {
+        width: 100%;
+    }
+}
+
+
+// Account

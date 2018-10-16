@@ -25,6 +25,7 @@
     cursor: pointer;
     outline: none;
     background: transparent;
+    z-index: 999;
 }
 .form-close img {
     transition: 500ms;
@@ -40,7 +41,7 @@
     font-family: Futura-Bold;
     display: block;
     line-height: 47px;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     letter-spacing: 0.1em;
     color: #000000;
