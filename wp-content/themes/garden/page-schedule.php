@@ -14,96 +14,159 @@ Template Name: Schedule
 
                 <h2 class="schedule-name schedule-name_p">Расписание</h2>
 
-                <div class="schedule-item">
-                    <?php the_field('time-1'); ?>
-                    <div class="schedule-item-wrp schedule-item-wrp_r">
-                        <div class="schedule-item__arr">
-                            <img src="<?php echo get_template_directory_uri(); ?>/build/images/schedule/line-red.png" alt="">
-                        </div>
-                        <div class="schedule-item__text"><?php the_field('name-1'); ?></div>
-                    </div>      
-                </div>
-                <div class="schedule-item">
-                    <?php the_field('time-2'); ?>
-                    <div class="schedule-item-wrp schedule-item-wrp_l">
-                        <div class="schedule-item__arr">
-                            <img src="<?php echo get_template_directory_uri(); ?>/build/images/schedule/line-red.png" alt="">
-                        </div>
-                        <div class="schedule-item__text"><?php the_field('name-2'); ?></div>
-                    </div>      
-                </div>
-                <div class="schedule-item">
-                    <?php the_field('time-3'); ?>
-                    <div class="schedule-item-wrp schedule-item-wrp_r">
-                        <div class="schedule-item__arr">
-                            <img src="<?php echo get_template_directory_uri(); ?>/build/images/schedule/line-red.png" alt="">
-                        </div>
-                        <div class="schedule-item__text"><?php the_field('name-3'); ?></div>
-                    </div>      
-                </div>
-                <div class="schedule-item">
-                    <?php the_field('time-4'); ?>
-                    <div class="schedule-item-wrp schedule-item-wrp_l">
-                        <div class="schedule-item__arr">
-                            <img src="<?php echo get_template_directory_uri(); ?>/build/images/schedule/line-red.png" alt="">
-                        </div>
-                        <div class="schedule-item__text"><?php the_field('name-4'); ?></div>
-                    </div>      
-                </div>
-                <div class="schedule-item">
-                    <?php the_field('time-5'); ?>
-                    <div class="schedule-item-wrp schedule-item-wrp_r">
-                        <div class="schedule-item__arr">
-                            <img src="<?php echo get_template_directory_uri(); ?>/build/images/schedule/line-red.png" alt="">
-                        </div>
-                        <div class="schedule-item__text"><?php the_field('name-5'); ?></div>
-                    </div>      
-                </div>
-                <div class="schedule-item">
-                    <?php the_field('time-6'); ?>
-                    <div class="schedule-item-wrp schedule-item-wrp_l">
-                        <div class="schedule-item__arr">
-                            <img src="<?php echo get_template_directory_uri(); ?>/build/images/schedule/line-red.png" alt="">
-                        </div>
-                        <div class="schedule-item__text"><?php the_field('name-6'); ?></div>
-                    </div>      
-                </div>
-                <div class="schedule-item">
-                    <?php the_field('time-7'); ?>
-                    <div class="schedule-item-wrp schedule-item-wrp_r">
-                        <div class="schedule-item__arr">
-                            <img src="<?php echo get_template_directory_uri(); ?>/build/images/schedule/line-red.png" alt="">
-                        </div>
-                        <div class="schedule-item__text"><?php the_field('name-7'); ?></div>
-                    </div>      
-                </div>
-                <div class="schedule-item">
-                    <?php the_field('time-8'); ?>
-                    <div class="schedule-item-wrp schedule-item-wrp_l">
-                        <div class="schedule-item__arr">
-                            <img src="<?php echo get_template_directory_uri(); ?>/build/images/schedule/line-red.png" alt="">
-                        </div>
-                        <div class="schedule-item__text"><?php the_field('name-8'); ?></div>
-                    </div>      
-                </div>
-                <div class="schedule-item">
-                    <?php the_field('time-9'); ?>
-                    <div class="schedule-item-wrp schedule-item-wrp_r">
-                        <div class="schedule-item__arr">
-                            <img src="<?php echo get_template_directory_uri(); ?>/build/images/schedule/line-red.png" alt="">
-                        </div>
-                        <div class="schedule-item__text"><?php the_field('name-9'); ?></div>
-                    </div>      
-                </div>
-                <div class="schedule-item">
-                    <?php the_field('time-10'); ?>
-                    <div class="schedule-item-wrp schedule-item-wrp_l">
-                        <div class="schedule-item__arr">
-                            <img src="<?php echo get_template_directory_uri(); ?>/build/images/schedule/line-red.png" alt="">
-                        </div>
-                        <div class="schedule-item__text"><?php the_field('name-10'); ?></div>
-                    </div>      
-                </div>
+                <?php if ( get_field('hide-1') == true ) { ?>
+                <?php } else { ?>
+
+                    <div class="schedule-item">
+                        <?php the_field('time-1'); ?>
+                        <div class="schedule-item-wrp schedule-item-wrp_r">
+                            <div class="schedule-item__arr">
+                                <img src="<?php echo get_template_directory_uri(); ?>/build/images/schedule/line-red.png" alt="">
+                            </div>
+                            <div class="schedule-item__text"><?php the_field('name-1'); ?></div>
+                        </div>      
+                    </div>
+                
+                <?php } ?>
+
+                <?php if ( get_field('hide-2') == true ) { ?>
+                <?php } else { ?>
+
+                    <div class="schedule-item">
+                        <?php the_field('time-2'); ?>
+                        <div class="schedule-item-wrp schedule-item-wrp_l">
+                            <div class="schedule-item__arr">
+                                <img src="<?php echo get_template_directory_uri(); ?>/build/images/schedule/line-red.png" alt="">
+                            </div>
+                            <div class="schedule-item__text"><?php the_field('name-2'); ?></div>
+                        </div>      
+                    </div>
+         
+                <?php } ?>
+
+                <?php if ( get_field('hide-3') == true ) { ?>
+                <?php } else { ?>
+
+                    <div class="schedule-item">
+                        <?php the_field('time-3'); ?>
+                        <div class="schedule-item-wrp schedule-item-wrp_r">
+                            <div class="schedule-item__arr">
+                                <img src="<?php echo get_template_directory_uri(); ?>/build/images/schedule/line-red.png" alt="">
+                            </div>
+                            <div class="schedule-item__text"><?php the_field('name-3'); ?></div>
+                        </div>      
+                    </div>
+                
+                <?php } ?>
+
+                <?php if ( get_field('hide-4') == true ) { ?>
+                <?php } else { ?>
+
+                    <div class="schedule-item">
+                        <?php the_field('time-4'); ?>
+                        <div class="schedule-item-wrp schedule-item-wrp_l">
+                            <div class="schedule-item__arr">
+                                <img src="<?php echo get_template_directory_uri(); ?>/build/images/schedule/line-red.png" alt="">
+                            </div>
+                            <div class="schedule-item__text"><?php the_field('name-4'); ?></div>
+                        </div>      
+                    </div>
+
+                <?php } ?>
+
+                <?php if ( get_field('hide-5') == true ) { ?>
+                <?php } else { ?>
+                
+                    <div class="schedule-item">
+                        <?php the_field('time-5'); ?>
+                        <div class="schedule-item-wrp schedule-item-wrp_r">
+                            <div class="schedule-item__arr">
+                                <img src="<?php echo get_template_directory_uri(); ?>/build/images/schedule/line-red.png" alt="">
+                            </div>
+                            <div class="schedule-item__text"><?php the_field('name-5'); ?></div>
+                        </div>      
+                    </div>
+ё
+                <?php } ?>
+
+                <?php if ( get_field('hide-6') == true ) { ?>
+                <?php } else { ?>
+
+                    <div class="schedule-item">
+                        <?php the_field('time-6'); ?>
+                        <div class="schedule-item-wrp schedule-item-wrp_l">
+                            <div class="schedule-item__arr">
+                                <img src="<?php echo get_template_directory_uri(); ?>/build/images/schedule/line-red.png" alt="">
+                            </div>
+                            <div class="schedule-item__text"><?php the_field('name-6'); ?></div>
+                        </div>      
+                    </div>
+
+                <?php } ?>
+
+                <?php if ( get_field('hide-7') == true ) { ?>
+                <?php } else { ?>
+
+                    <div class="schedule-item">
+                        <?php the_field('time-7'); ?>
+                        <div class="schedule-item-wrp schedule-item-wrp_r">
+                            <div class="schedule-item__arr">
+                                <img src="<?php echo get_template_directory_uri(); ?>/build/images/schedule/line-red.png" alt="">
+                            </div>
+                            <div class="schedule-item__text"><?php the_field('name-7'); ?></div>
+                        </div>      
+                    </div>
+
+                <?php } ?>
+
+                <?php if ( get_field('hide-8') == true ) { ?>
+                <?php } else { ?>
+
+                    <div class="schedule-item">
+                        <?php the_field('time-8'); ?>
+                        <div class="schedule-item-wrp schedule-item-wrp_l">
+                            <div class="schedule-item__arr">
+                                <img src="<?php echo get_template_directory_uri(); ?>/build/images/schedule/line-red.png" alt="">
+                            </div>
+                            <div class="schedule-item__text"><?php the_field('name-8'); ?></div>
+                        </div>      
+                    </div>
+
+                <?php } ?>
+
+                <?php if ( get_field('hide-9') == true ) { ?>
+                <?php } else { ?>
+
+                    <div class="schedule-item">
+                        <?php the_field('time-9'); ?>
+                        <div class="schedule-item-wrp schedule-item-wrp_r">
+                            <div class="schedule-item__arr">
+                                <img src="<?php echo get_template_directory_uri(); ?>/build/images/schedule/line-red.png" alt="">
+                            </div>
+                            <div class="schedule-item__text"><?php the_field('name-9'); ?></div>
+                        </div>      
+                    </div>
+
+                <?php } ?>
+
+                <?php if ( get_field('hide-10') == true ) { ?>
+                <?php } else { ?>
+
+                    <div class="schedule-item">
+                        <?php the_field('time-10'); ?>
+                        <div class="schedule-item-wrp schedule-item-wrp_l">
+                            <div class="schedule-item__arr">
+                                <img src="<?php echo get_template_directory_uri(); ?>/build/images/schedule/line-red.png" alt="">
+                            </div>
+                            <div class="schedule-item__text"><?php the_field('name-10'); ?></div>
+                        </div>      
+                    </div>
+
+                <?php } ?>
+
+                <?php if ( get_field('hide-11') == true ) { ?>
+                <?php } else { ?>
+
                 <div class="schedule-item">
                     <?php the_field('time-11'); ?>
                     <div class="schedule-item-wrp schedule-item-wrp_r">
@@ -113,33 +176,52 @@ Template Name: Schedule
                         <div class="schedule-item__text"><?php the_field('name-11'); ?></div>
                     </div>      
                 </div>
-                <div class="schedule-item">
-                    <?php the_field('time-12'); ?>
-                    <div class="schedule-item-wrp schedule-item-wrp_l">
-                        <div class="schedule-item__arr">
-                            <img src="<?php echo get_template_directory_uri(); ?>/build/images/schedule/line-red.png" alt="">
-                        </div>
-                        <div class="schedule-item__text"><?php the_field('name-12'); ?></div>
-                    </div>      
-                </div>
-                <div class="schedule-item">
-                    <?php the_field('time-13'); ?>
-                    <div class="schedule-item-wrp schedule-item-wrp_r">
-                        <div class="schedule-item__arr">
-                            <img src="<?php echo get_template_directory_uri(); ?>/build/images/schedule/line-red.png" alt="">
-                        </div>
-                        <div class="schedule-item__text"><?php the_field('name-13'); ?></div>
-                    </div>      
-                </div>
-                <div class="schedule-item">
-                    <?php the_field('time-14'); ?>
-                    <div class="schedule-item-wrp schedule-item-wrp_l">
-                        <div class="schedule-item__arr">
-                            <img src="<?php echo get_template_directory_uri(); ?>/build/images/schedule/line-red.png" alt="">
-                        </div>
-                        <div class="schedule-item__text"><?php the_field('name-14'); ?></div>
-                    </div>      
-                </div>
+
+                <?php } ?>
+
+                <?php if ( get_field('hide-12') == true ) { ?>
+                <?php } else { ?>
+
+                    <div class="schedule-item">
+                        <?php the_field('time-12'); ?>
+                        <div class="schedule-item-wrp schedule-item-wrp_l">
+                            <div class="schedule-item__arr">
+                                <img src="<?php echo get_template_directory_uri(); ?>/build/images/schedule/line-red.png" alt="">
+                            </div>
+                            <div class="schedule-item__text"><?php the_field('name-12'); ?></div>
+                        </div>      
+                    </div>
+                
+                <?php } ?>
+
+                <?php if ( get_field('hide-13') == true ) { ?>
+
+                    <div class="schedule-item">
+                        <?php the_field('time-13'); ?>
+                        <div class="schedule-item-wrp schedule-item-wrp_r">
+                            <div class="schedule-item__arr">
+                                <img src="<?php echo get_template_directory_uri(); ?>/build/images/schedule/line-red.png" alt="">
+                            </div>
+                            <div class="schedule-item__text"><?php the_field('name-13'); ?></div>
+                        </div>      
+                    </div>
+
+                <?php } ?>
+
+                <?php if ( get_field('hide-14') == true ) { ?>
+                <?php } else { ?>
+
+                    <div class="schedule-item">
+                        <?php the_field('time-14'); ?>
+                        <div class="schedule-item-wrp schedule-item-wrp_l">
+                            <div class="schedule-item__arr">
+                                <img src="<?php echo get_template_directory_uri(); ?>/build/images/schedule/line-red.png" alt="">
+                            </div>
+                            <div class="schedule-item__text"><?php the_field('name-14'); ?></div>
+                        </div>      
+                    </div>
+
+                <?php } ?>
 
             </div>
 

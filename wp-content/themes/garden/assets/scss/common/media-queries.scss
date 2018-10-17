@@ -42,6 +42,30 @@
     .block-contact-wrp {
         padding: 40px 72px 50px;
     }
+    .form-modal-content {
+        padding: 54px 41px 30px;
+        border-radius: 7px;
+    }
+    .form-pop-dialog {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .form-modal__name_padd {
+        padding-bottom: 25px;
+    }
+    .form-modal__name {
+        line-height: 30px;
+        font-size: 24px;
+    }
+    .form-modal-content img{
+        max-width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 360px){
+    .form-modal-content {
+        padding: 46px 10px 20px;
+    }
 }
 
 // Main page
@@ -2208,5 +2232,130 @@
     }
 }
 
-
 // Account
+
+// Team 
+
+@media (max-width: 1024px){
+    .team-people-wrp {
+        margin: 0 0;
+    }
+    .team-people_p {
+        padding: 127px 0 100px;
+    }
+}
+@media (max-width: 768px){
+    .team-first-block {
+        position: relative;
+        height: 884px;
+    }
+    .team-people-wrp {
+        margin: 0 35px;
+    }
+    .team-part-title {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .team-part_hidden-tab{
+        display: none;
+    }
+    .team-part img {
+        height: 400px;
+    }
+    .team-part-item {
+        padding: 0;
+    }
+    .team-part-item__title {
+        font-size: 30px;
+        padding-bottom: 26px;
+        padding-top: 33px;
+        text-align: left;
+    }
+    .team-part-item__text {
+        text-align: left;
+        padding-bottom: 50px;
+    }
+    .team-part-item__btn {
+        width: 260px;
+        margin: 0;
+    }
+    .team-first-block-text__text {
+        padding-bottom: 40px;
+    }
+}
+@media (max-width: 425px){
+    .team-first-block {
+        position: relative;
+        height: 573px;
+    }
+    .team-first-block-text__title {
+        line-height: 38px;
+        font-size: 24px;
+        padding-bottom: 10px;
+    }
+    .team-first-block-text__text {
+        padding-bottom: 30px;
+        line-height: 19px;
+        font-size: 14px;
+        width: 85%;
+        margin: 0 auto;
+    }
+    .team-people_p {
+        padding: 70px 0 50px;
+    }
+    .team-people-wrp {
+        margin: 0;
+        padding-bottom: 63px;
+    }
+    .team-people-wrp img {
+        height: 200px;
+    }
+    .team-people-wrp__name {
+        font-family: Futura-Bold;
+        line-height: 19px;
+        font-size: 12px;
+        padding: 18px 0 14px;
+    }
+    .team-people-wrp__job {
+        line-height: 16px;
+        font-size: 10px;
+        margin-bottom: 18px;
+    }
+    ..team-people-wrp__job  p{
+        line-height: 16px;
+        font-size: 10px;
+    }
+    .team-part_p {
+        padding: 40px 0 190px;
+    }
+    .team-part-title {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 30px;
+        padding-bottom: 40px;
+    }
+    .team-part img {
+        height: 224px;
+    }
+    .team-part-item__title {
+        font-size: 24px;
+        text-align: center;
+    }
+    .team-part-item__text {
+        line-height: 16px;
+        font-size: 10px;
+        text-align: center;
+        padding-bottom: 40px;
+        width: 85%;
+        margin: 0 auto;
+    }
+    .team-part-item__btn {
+        width: 200px;
+        margin: 0 auto;
+    }
+    .team-first-block-text {
+        width: auto;
+    }
+}
+
+// Team 
